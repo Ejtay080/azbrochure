@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@font-face{
+    font-family: '';
+    src: url("fonts/Sabo-Filled.otf") format("opentype"),
+    url() format();
+}
+html{
+    background-color: #fedbb7;
+}
+body{
+    background-color: #acb9e8;
+    font-family: 'retro';
+    margin: 0 auto;
+    color: #0C141F;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 10% 80% 10%;
+    min-height: 900px;
+    max-height: 1920px;
+    
+    
+}
+.box{
+    background-color: #d0e5ff;
+    border: solid 4px #B82700;
+    clear: both;
+    content: "";
+    display:table;
+
+}
+.images-1{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.images-2{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.nav{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.footer{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.footer, .nav, .header, .images-1, .images-2, .box{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

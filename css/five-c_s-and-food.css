@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Lora';
+    src: url("fonts/Lora-Regular.ttf") format("truetype"),
+    url("fonts/Lora-Bold.ttf") format("truetype");
+}
+html{
+    background-color: #fedbb7;
+}
+body{
+    background-color: #acb9e8;
+    font-family: 'retro';
+    margin: 0 auto;
+    color: #0C141F;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 35% 35%;
+    grid-template-rows: 20% 35% 35% 10%;
+    min-height: 970px;
+    max-height: 1920px;
+    grid-gap: 2px;
+}
+.box{
+    background-color: beige;
+    clear: both;
+    content: "";
+    display:table;
+    border: hsl(227, 68%, 73%) 2px solid;
+    text-align: left;
+    text-indent: 50px;
+}
+.logo{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-repeat: no-repeat;
+    background-attachment: none;
+    background-size: cover;
+    text-align: center;
+}
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 20%;
+    text-align: center;
+}
+.nav{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    position: fixed;
+    top: 81px;
+    text-align: center;
+    width: 100%;
+
+}
+.nav a{
+    font-size: 135%;
+
+}
+.nav a:visited{
+    color: rgb(224, 151, 56);
+    text-decoration: none;
+}
+.nav a:hover{
+    color: burlywood;
+    text-decoration: underline;
+}
+.nav a:active{
+    color: rgb(247, 145, 11);
+    text-decoration: none;
+}
+.nav a:link{
+    color: rgb(247, 145, 11);
+    text-decoration: none;
+}
+
+.aside{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 70%;
+    font-size:200%;
+}
+.prox-to-fam{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 35%;
+    font-size: 200%;
+}
+.culture{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 35%;
+    font-size: 140%;
+}
+.prox-to-airport{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 35%;
+    font-size: 170%;
+}
+.prox-to-airport ul li > h4 > a:visited{
+    color: rgb(224, 151, 56);
+    text-decoration: none;
+}
+.prox-to-airport ul li > h4 > a:hover{
+    color: burlywood;
+    text-decoration: underline;
+}
+.prox-to-airport ul li > h4 > a:active{
+    color: rgb(247, 145, 11);
+    text-decoration: none;
+}
+.prox-to-airport ul li > h4 > a:link{
+    color: rgb(247, 145, 11);
+    text-decoration: none;
+}
+.healthcare{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 35%;
+    font-size: 100%;
+    font-family: 'Lora';
+}
+.footer{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 10%;
+    text-align: center;
+    font-size:115%;
+}
+.back-to-top{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 10%;
+    text-align: center;
+    font-size: 110%;
+}
+.back-to-top > h1 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer, .nav, .header, .aside, .box, .back-to-top, .prox-to-fam, .prox-to-airport, .healthcare, .culture, .watermark{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
